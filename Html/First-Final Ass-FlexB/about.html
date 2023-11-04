@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="about">
+      <div class="main-container">
+        <div class="nav">
+          <div class="left">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="middle">Comfy</div>
+          <div class="right">
+            <i
+              id="cart"
+              onclick="openNav()"
+              class="fas fa-shopping-cart fa-2x cart-icon"
+            ></i>
+            <div class="zero">0</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- bread Crumbs section -->
+    <section class="bread-crump">
+      <div class="main-container"><h3>Home / Products</h3></div>
+    </section>
+    <!-- about -->
+    <section class="about-content">
+      <div class="main-container">
+        <h1>Our History</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          dolores eius molestiae? Dolor illum voluptas aperiam asperiores
+          deleniti repellat magnam, nulla dolorum temporibus quam inventore
+          minima voluptate rerum harum veniam aliquid rem quas dolores suscipit,
+          facilis non iure, voluptates sunt. Nisi dicta maxime dolorum
+          laboriosam accusamus libero ipsa voluptates? Non atque sed ducimus
+          nesciunt velit sapiente suscipit obcaecati sequi saepe harum! Voluptas
+          explicabo quos illum mollitia maxime, perspiciatis aperiam nostrum
+          unde, dolorum sint, ea quidem voluptatem! Ipsam numquam itaque nobis
+          provident autem est labore laboriosam animi, et natus? Perferendis
+          dolores ipsa error placeat earum. Quaerat vel eaque temporibus. Sunt.
+        </p>
+      </div>
+    </section>
+    <div class="slider-container" id="slider-container">
+      <div id="dark-part"></div>
+      <div id="mySidenav" class="sidenav">
+        <div class="sidebar-container" id="sidebardata">
+          <a
+            href="javascript:void(0)"
+            id="mySide"
+            class="closebtn"
+            onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="main-sec">
+            <h3 class="heading">Your Bag</h3>
+            <div class="final">
+              <h3 class="total">Total : $12.99</h3>
+              <button class="checkout-btn btn-1">check out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

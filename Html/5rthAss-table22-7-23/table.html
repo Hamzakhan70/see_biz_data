@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+      td,
+      th {
+        border: 1px solid;
+      }
+      .col-1 {
+        text-align: center;
+      }
+      .col-start {
+        text-align: start;
+      }
+      .col-last {
+        text-align: end;
+      }
+      .col-bottom {
+        text-align: center;
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td rowspan="6" class="col-1">Students information</td>
+        <td rowspan="2" class="col-bottom">Name</td>
+        <td colspan="2" class="col-1">Address</td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td>House No</td>
+      </tr>
+
+      <tr>
+        <td class="col-1">A</td>
+        <td>LHR</td>
+        <td class="col-last">1</td>
+      </tr>
+      <tr>
+        <td class="col-1">B</td>
+        <td>ISD</td>
+        <td class="col-1">2</td>
+      </tr>
+      <tr>
+        <td class="col-1">C</td>
+        <td>GUJ</td>
+        <td class="col-start">3</td>
+      </tr>
+      <tr>
+        <td class="col-1">D</td>
+        <td>MTN</td>
+        <td class="col-last">4</td>
+      </tr>
+    </table>
+  </body>
+</html>

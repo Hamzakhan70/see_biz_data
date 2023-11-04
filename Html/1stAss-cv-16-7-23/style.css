@@ -1,0 +1,28 @@
+* {
+  margin: 15px;
+  background-color: azure;
+}
+
+header p:last-child {
+  font-weight: bold;
+}
+header div p {
+  margin: 0%;
+  padding: 0%;
+}
+h2 {
+  color: rgb(43, 61, 226);
+}
+.company span:first-child {
+  font-weight: bold;
+  margin: 0%;
+  padding: 0%;
+}
+.company {
+  margin: 0%;
+  padding: 0%;
+}
+.company ~ p {
+  margin: 0%;
+  padding: 0%;
+}

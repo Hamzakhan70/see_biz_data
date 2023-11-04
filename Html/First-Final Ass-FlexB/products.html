@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Page</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="product">
+      <div class="main-container">
+        <div class="nav">
+          <div class="left">
+            <ul class="product-list">
+              <li><a href="/">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="middle">Comfy</div>
+          <div class="right">
+            <i
+              id="cart"
+              onclick="openNav()"
+              class="fas fa-shopping-cart fa-2x cart-icon"
+            ></i>
+            <div class="zero">0</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- bread Crumbs section -->
+    <section class="bread-crump">
+      <div class="main-container"><h3>Home / Products</h3></div>
+    </section>
+
+    <!-- products container section -->
+    <section class="products">
+      <div class="main-container">
+        <div class="products-container">
+          <div class="left">
+            <input type="search" placeholder="search..."  class="left-input"/>
+            <!--  -->
+            <div class="tabs" >
+              <h4 class="tab-e1">Company</h4>
+              <button class="tab-e1" onclick="openCity(event, 'London')">All</button>
+              <button class="tab-e1" onclick="openCity(event, 'Paris')">IIkea</button>
+              <button class="tab-e1" onclick="openCity(event, 'Tokyo')">Marcos</button>
+              <button class="tab-e1" onclick="openCity(event, 'Tokyo')">Carresa</button>
+              <button class="tab-e1" onclick="openCity(event, 'Tokyo')">Liddy</button>
+              <h4 class="tab-e1">Price</h4>
+              <input type="range" value="23" id="range">
+              <label for="range">value is:23</label>
+              
+            </div>
+            <!--  -->
+          </div>
+          <div class="right">
+            <div class="article-division">
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-1.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-4.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-7.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-1.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-4.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-7.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-1.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-4.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-7.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-1.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-4.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+              <article class="design-1">
+                <div class="img-container">
+                  <img src="./images/product-7.jpeg" alt="this is product no 1" />
+                  <div class="icon">
+                    <a href="product.html"
+                  ><i class="fas fa-search" id="hid-1"></i
+                ></a>
+                    <i class="fas fa-cart-plus" id="hid-1" onclick="openNav()"></i>
+                  </div>
+                </div>
+                <p>High-Back Bench</p>
+                <p>Product Company: Ikea</p>
+                <p><strong>$9.99</strong></p>
+              </article>
+            </div>
+    
+        </div>
+      </div>
+      
+    </section>
+  
+    
+    <div class="slider-container" id="slider-container">
+      <div id="dark-part"></div>
+      <div id="mySidenav" class="sidenav">
+        <div class="sidebar-container" id="sidebardata">
+          <a
+            href="javascript:void(0)"
+            id="mySide"
+            class="closebtn"
+            onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="main-sec">
+            <h3 class="heading">Your Bag</h3>
+            <div class="final">
+              <h3 class="total">Total : $12.99</h3>
+              <button class="checkout-btn btn-1">check out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

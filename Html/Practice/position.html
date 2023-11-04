@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <!-- <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        person1: {
+          name: this.firstName,
+          person2: {
+            nested: this.name,
+          },
+        },
+      };
+
+      console.log(person);
+    </script> -->
+    <script>
+      const obj = {
+        name: "hamza",
+        class: "bsiT",
+        id: 77,
+      };
+      for (let i in obj) {
+        console.log(i);
+      }
+
+      for (let i in obj) {
+        console.log(obj[i]);
+      }
+    </script>
+    <style>
+      .a {
+        background-color: aqua;
+        height: 29px;
+        max-width: 499px;
+        margin: auto;
+      }
+      .b {
+        /* position: absolute; */
+        background-color: rgb(10, 192, 62);
+        /* left: 30px; */
+        height: 19px;
+        width: 499px;
+        margin: auto;
+      }
+      .c {
+        /* position: absolute; */
+        background-color: rgb(49, 9, 226);
+        height: 9px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="a">hamza arif khan</div>
+      <div class="c">khan Allah nawaz khan</div>
+      <div class="b">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+        facilis saepe temporibus et quidem ipsam accusamus, mollitia alias. Ab
+        quidem dolorem quae fuga laudantium, asperiores doloremque voluptas quas
+        fugit ipsam, accusamus delectus doloribus sapiente.
+      </div>
+    </div>
+    <form action="/action_page.php">
+      <textarea
+        name="message"
+        style="width: 200px; resize: none; height: 600px"
+      >
+The cat was playing in the garden.</textarea
+      >
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

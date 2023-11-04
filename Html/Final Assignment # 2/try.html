@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>Document</title>
+    <script>
+      // function makeAdder(x) {
+      //   return function (y) {
+      //     return x + y;
+      //   };
+      // }
+
+      // const add5 = makeAdder(5);
+      // const add10 = makeAdder(10);
+
+      // console.log(add5(2)); // 7
+      // console.log(add10(2)); // 12
+
+      // function sum(a) {
+      //   return function (b) {
+      //     if (b) return sum(a + b);
+      //     return a;
+      //   };
+      // }
+      // sum(1)(2)(3)(4)();
+
+      // const myName = {
+      //   fullName: { firstName: "Oluwatobi", lastName: "Sofela" },
+      // };
+
+      // // myName.fullName = { firstName: "Tobi", lastName: "Sofela" };
+      // const bio = { ...myName };
+      // // const bio = JSON.parse(JSON.stringify(myName));
+
+      // // myName.fullName.firstName = "Tobi";
+
+      // console.log(myName); // { fullName: { firstName: "Tobi", lastName: "Sofela" } }
+      // console.log(bio); // { fullName: { firstName: "Tobi", lastName: "Sofela" } }
+      // let user = {
+      //   name: "Kingsley",
+
+      //   age: 28,
+
+      //   job: "Web Developer",
+
+      //   location: {
+      //     city: "Lagos",
+      //   },
+      // };
+
+      // let clone = { ...user };
+      // user = {
+      //   // ...clone,
+
+      //   age: 32,
+
+      //   location: {
+      //     ...user.location,
+
+      //     city: "New York",
+      //   },
+      // };
+
+      // console.log(user); // { fullName: { firstName: "Tobi", lastName: "Sofela" } }
+      // console.log(clone); // { fullName: { firstName: "Tobi", lastName: "Sofela" } }
+
+      let father = {
+        name: "john",
+        age: 45,
+        location: {
+          adress: "Lahore",
+          town: {
+            t: "Dehli Gate",
+            street: {
+              galiNo1: "Prem-Gali",
+              galiNo2: "Gali Sorjan Singh",
+            },
+          },
+        },
+      };
+      // let daughter = { ...father };
+
+      let daughter = {
+        ...father,
+        name: "Lilli",
+        age: 25,
+        location: {
+          // ...father.location,
+          adress: "Karachiiii",
+          town: {
+            // ...father.location.town,
+            t: "karachi-layari",
+            street: {
+              ...father.location.town.street,
+              galiNo1: "Kiran-Gali",
+            },
+          },
+        },
+      };
+
+      daughter.location.adress = "karachi";
+      father.location.town.street.galiNo3 = "ajk";
+      console.log(father);
+      console.log("!!!!!!!--------------------------!!!!!!!!!!");
+      console.log(daughter);
+    </script>
+    <style>
+      .memberss {
+        display: flex;
+        gap: 23px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .member {
+        flex-basis: 32%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      .member:hover .img-box img {
+        transform: scale(1.1);
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+      }
+      .member:hover .icon {
+        display: block;
+        width: 99%;
+        height: 99%;
+        left: 0%;
+        transition-duration: 4s;
+      }
+
+      .img-box {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .memb-img {
+        width: 100%;
+        transition: 0.5s;
+      }
+
+      .name-designation {
+        padding: 20px;
+        border: 4px solid lightgray;
+        border-top: none;
+      }
+      .icon {
+        position: absolute;
+        bottom: 0%;
+        background-color: rgb(5, 199, 83);
+        opacity: 0.4;
+        width: 1%;
+        height: 1%;
+        color: black;
+        animation-name: flow;
+        animation-duration: 2s;
+        display: none;
+        display: flex;
+        justify-content: center;
+        left: 48%;
+      }
+
+      #hid-1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-49%, -49%);
+        width: 14%;
+        height: 14%;
+        margin: 7px;
+        padding: 5px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: 2px solid white;
+      }
+      @keyframes flow {
+        from {
+          transform: scale(0.1);
+          bottom: 1%;
+          width: 20%;
+          height: 20%;
+          left: 50%;
+        }
+        to {
+          /*  */
+          /* bottom: %; */
+          width: 100%;
+          height: 100%;
+          left: 0%;
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="memberss">
+      <div class="member Service">
+        <div class="img-box">
+          <img src="./img/service-1.jpg" alt="curley hair" class="memb-img" />
+          <div class="icon">
+            <a href=""><i class="fas fa-eye arrow" id="hid-1"></i></a>
+            <i class="fas fa-link arrow" id="hid-1"></i>
+          </div>
+        </div>
+        <div class="name-designation">
+          <p>General Carpentry</p>
+          <br />
+          <h4>Wooden Furniture Manufacturing and Remodeling</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+    <title>Sorting</title>
+  </head>
+  <body>
+    <section class="main-sec">
+      <h1>Please Enter Array of Numbers</h1>
+      <!-- <form
+        name="my-form"
+        onsubmit="return show()"
+        action="sorting.html"
+        target="_self"
+        method="get"
+        id="data"
+      > -->
+      <br />
+      <label for="arr"> Enter single Array-item and Add in Array:</label> <br />
+      <div class="left">
+        <input
+          type="text"
+          id="arr"
+          class="f-input"
+          name="arr"
+          value=""
+          placeholder="Enter Array Element "
+        />
+        <input
+          type="button"
+          class="add f-btn f-input"
+          id="add"
+          value="Add"
+          onclick="Add()"
+        />
+      </div>
+      <input
+        type="text"
+        id="arr-1"
+        class="f-input f-output"
+        name="arr"
+        value=""
+        placeholder="Here you will see Array "
+      /><br />
+      <input type="radio" id="seclection" name="Sorting" value="Selection" />
+      <label for="seclection">Selection</label><br />
+      <input type="radio" name="Sorting" id="merge" value="Merge" />
+      <label for="merge">Merge</label><br />
+      <!-- <input type="radio" name="Sorting" id="heap" value="Heap" />
+      <label for="heap">Heap</label><br /> -->
+      <input type="radio" name="Sorting" id="quick" value="Quick" />
+      <label for="quick">Quick</label><br />
+      <input type="radio" name="Sorting" id="bubble" value="Bubble" />
+      <label for="bubble">Bubble</label><br />
+      <input type="radio" name="Sorting" id="insertion" value="Insertion" />
+      <label for="insertion">Insertion</label><br />
+      <input type="submit" id="btn" class="f-btn f-input" onclick="show()" />
+      <!-- </form> -->
+      <div class="for-display">
+        <p id="entered"></p>
+        <p id="sort"></p>
+        <p id="sorted"></p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

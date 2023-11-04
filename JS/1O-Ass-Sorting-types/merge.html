@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Merging function
+      // function merge(arr, left, middle, right) {
+      //   // Find sizes of two subarrays to be merged
+
+      //   // console.log("in merge function at start");
+      //   // console.log("left=" + left);
+      //   // console.log("middle=" + middle);
+      //   // console.log("right=" + right);
+      //   // console.log("Arr=" + arr);
+      //   let n1 = middle - left + 1;
+      //   let n2 = right - middle;
+
+      //   let leftArr = [n1];
+      //   let rightArr = [n2];
+
+      //   // Copy data to temporary arrays
+      //   for (let i = 0; i < n1; i++) {
+      //     leftArr[i] = arr[left + i];
+      //   }
+      //   for (let j = 0; j < n2; j++) {
+      //     rightArr[j] = arr[middle + 1 + j];
+      //   }
+
+      //   // Merge the temp arrays
+
+      //   // Initial indices of first and second subarrays
+      //   let i = 0,
+      //     j = 0;
+
+      //   // Initial index of merged subarray array
+      //   let k = left;
+      //   while (i < n1 && j < n2) {
+      //     if (leftArr[i] <= rightArr[j]) {
+      //       arr[k] = leftArr[i];
+      //       i++;
+      //     } else {
+      //       arr[k] = rightArr[j];
+      //       j++;
+      //     }
+      //     k++;
+      //   }
+
+      //   // Copy remaining elements of Left[] if any
+      //   while (i < n1) {
+      //     arr[k] = leftArr[i];
+      //     i++;
+      //     k++;
+      //   }
+
+      //   // Copy remaining elements of Right[] if any
+      //   while (j < n2) {
+      //     arr[k] = rightArr[j];
+      //     j++;
+      //     k++;
+      //   }
+      // }
+
+      // deviding function()
+      function sort(arr, left, right) {
+        if (left < right) {
+          // console.log("left=" + left);
+          // console.log("right=" + right);
+          // console.log("Arr=" + arr);
+          // Find the middle point
+          let middle = Math.floor(left + (right - left) / 2);
+          // Sort first and second halves Recursive calls
+          // console.log("middle=" + middle);
+          sort(arr, left, middle);
+          sort(arr, middle + 1, right);
+
+          // console.log("before merge function");
+          // console.log("left=" + left);
+          // console.log("middle=" + middle);
+          // console.log("right=" + right);
+          // console.log("Arr=" + arr);
+          // Merge the sorted halves
+          // merge(arr, left, middle, right);
+          // function merge(arr, left, middle, right) {
+          // Find sizes of two subarrays to be merged
+
+          // console.log("in merge function at start");
+          // console.log("left=" + left);
+          // console.log("middle=" + middle);
+          // console.log("right=" + right);
+          // console.log("Arr=" + arr);
+          let n1 = middle - left + 1;
+          let n2 = right - middle;
+
+          let leftArr = [n1];
+          let rightArr = [n2];
+
+          // Copy data to temporary arrays
+          for (let i = 0; i < n1; i++) {
+            leftArr[i] = arr[left + i];
+          }
+          for (let j = 0; j < n2; j++) {
+            rightArr[j] = arr[middle + 1 + j];
+          }
+
+          // Merge the temp arrays
+
+          // Initial indices of first and second subarrays
+          let i = 0,
+            j = 0;
+
+          // Initial index of merged subarray array
+          let k = left;
+          while (i < n1 && j < n2) {
+            if (leftArr[i] <= rightArr[j]) {
+              arr[k] = leftArr[i];
+              i++;
+            } else {
+              arr[k] = rightArr[j];
+              j++;
+            }
+            k++;
+          }
+
+          // Copy remaining elements of Left[] if any
+          while (i < n1) {
+            arr[k] = leftArr[i];
+            i++;
+            k++;
+          }
+
+          // Copy remaining elements of Right[] if any
+          while (j < n2) {
+            arr[k] = rightArr[j];
+            j++;
+            k++;
+          }
+        }
+      }
+      // }
+
+      // Driver code
+
+      let arr = [4, 2, 3, 1];
+
+      console.log("Given array is");
+      console.log(arr);
+
+      sort(arr, 0, arr.length - 1);
+
+      console.log("\nSorted array is");
+      console.log(arr);
+    </script>
+  </body>
+</html>

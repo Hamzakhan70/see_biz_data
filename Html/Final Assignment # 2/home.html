@@ -1,0 +1,860 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
+    <script>
+      // let father = {
+      //   name: "john",
+      //   age: 45,
+      //   location: {
+          
+      //     address: "Lahore",
+      //     town: {
+      //       t: "Dehli Gate",
+      //       street: {
+      //         galiNo1: "Prem-Gali",
+      //         galiNo2: "Gali Sorjan Singh",
+      //       },
+      //     },
+      //   },
+      // };
+      // let daughter = { ...father};
+      
+      // daughter.name = "lili";
+      // daughter.age = 25
+      // daughter.location.address="karachi"
+      // // -----------------------------------//
+      // console.log(daughter);
+      // console.log(father);
+
+
+//       const iifeContainer = function () {
+//   /**
+//    * private members => these are only accesible inside the scope IIFE scope
+//    */
+//   const fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+//   const _print = (data) => {
+//     console.log("Inventory: ", data.toString());
+//     // console.log("hamza");
+//   };
+
+//   const _addOne = (item) => {
+//     fruits.push(item);
+//   };
+//   /**
+//    * public members
+//    */
+//   return {
+//     getInventory: () => _print(fruits),
+//     addInventory: (item) => _addOne(item),
+//   };
+// };
+// let value = iifeContainer();
+// // console.log(value);
+// value.getInventory();
+// value.addInventory("Cherry");
+// value.getInventory();
+
+// -------------------------------------------------------------------
+const iifeContainer = (() => {
+  /**
+   * private members => these are only accesible inside the scope IIFE scope
+   */
+  const fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+  const _print = (data) => {
+    console.log("Inventory: ", data.toString());
+  };
+
+  const _addOne = (item) => {
+    fruits.push(item);
+  };
+  /**
+   * public members
+   */
+  return {
+    a: 9,
+    // getFruits: () => _print(fruits),
+    // getFruits: console.log(fruits.push("jamshed")),
+    // getFruits: console.log(fruits),
+    // addFruits: (item) => _addOne(item),
+  };
+})();
+
+// iifeContainer.getFruits;
+// iifeContainer.addFruits("Cherry");
+// iifeContainer.getFruits;
+iifeContainer.a = 8888;
+console.log(iifeContainer.a);
+
+    </script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <!-- first nav -->
+      <div class="main-container">
+        <div class="main-head">
+          <!-- left side -->
+          <div class="left">
+            <div class="left-1">
+              <i class="fa fa-map-marker first-icon"></i>
+              <span> 123 Street, NewYork, USA</span>
+            </div>
+            <div class="left-2">
+              <i class="far fa-clock text-primary first-icon"></i>
+              <span> MON - FRI 9:OO AM - O9:OO PM</span>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="right">
+            <div class="right-1">
+              <i class="fa fa-phone-alt text-primary first-icon"></i>
+              <span> +92305 6761558 </span>
+            </div>
+            <div class="right-2">
+              <a class="first-icon" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="first-icon" href=""><i class="fab fa-twitter"></i></a>
+              <a class="first-icon" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a class="first-icon" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <hero>
+      <!-- <div class="main-container"> -->
+      <div class="nav">
+        <div class="nav-left">
+          <a href="">
+            <h2>WooDY</h2>
+          </a>
+        </div>
+        <div class="nav-middle">
+          <div class="nav-right">
+            <a href="/home.html" class="nav-middle-link">HOME</a
+            ><a href="/about.html" class="nav-middle-link">ABOUT</a
+            ><a href="/services.html" class="nav-middle-link">SERVICE</a
+            ><a href="/projects.html" class="nav-middle-link">PROJECT</a
+            ><a href="" class="nav-middle-link pages-drop"
+              >PAGES <i class="fas fa-angle-down"></i>
+              <div class="dropdown-content">
+                <a href="./home.html" class="drop-item">Home</a>
+                <a href="./services.html" class="drop-item">Service</a>
+                <a href="./projects.html" class="drop-item">Project</a>
+                <a href="./contacts.html" class="drop-item">Contact</a>
+                <a href="./page44.html" class="drop-item">Page44</a>
+              </div>
+            </a>
+            <a href="" class="nav-middle-link">CONTACT</a>
+          </div>
+          <a href="" class="nav-right-link most-right-link"
+            >Get A Quote <i class="fa fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+      <!-- </div> -->
+    </hero>
+
+    <!-- slider section -->
+
+    <section class="slider">
+      <!-- <div class="main-container"> -->
+        <!-- slider image -->
+
+        <div class="slider-container">
+         <div class="slider-img">
+          <img
+          class="mySlides img-style"
+          src="./img/carousel-3.jpg"
+        />
+         </div>
+          <img
+            class="mySlides"
+            src="./img/carousel-1.jpg"
+          
+          />
+          <img
+            class="mySlides"
+            src="./img/carousel-2.jpg"
+            
+          />
+          <img
+            class="mySlides"
+            src="./img/carousel-3.jpg"
+          />
+          <div class="slider-content">
+            <h5>Welcome to WooDY-4</h5>
+            <h1>Best Carpenter & Craftsman Services</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab
+              culpa inventore nulla aperiam ipsa accusantium, neque beatae, illum
+              a dolor molestias excepturi?
+            </p>
+            <button class="left-btn btn">Read More</button
+            ><button class="right-btn btn">Free Quote</button>
+            <div class="f-arrow">
+              <i class="fa fa-arrow-left arrow" onclick="plusDivs(-1)"></i>
+              <i class="fa fa-arrow-right arrow" onclick="plusDivs(1)"></i>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about">
+      <div class="main-container">
+        <div class="f-row">
+          <div class="uper-content">
+            <div class="icon-no">
+              <i class="fa fa-user-check first-icon about-ic"></i>
+              <h1 class="digit">01</h1>
+            </div>
+            <h5>Creative Designers</h5>
+          </div>
+          <div class="uper-content">
+            <div class="icon-no">
+              <i class="fa fa-check first-icon about-ic"></i>
+              <h1 class="digit">02</h1>
+            </div>
+            <h5>Quality Products</h5>
+          </div>
+          <div class="uper-content">
+            <div class="icon-no">
+              <i class="fa fa-drafting-compass first-icon about-ic"></i>
+              <h1 class="digit">03</h1>
+            </div>
+            <h5>Fee Consultation</h5>
+          </div>
+          <div class="uper-content">
+            <div class="icon-no">
+              <i class="fa fa-headphones first-icon about-ic"></i>
+              <h1 class="digit">04</h1>
+            </div>
+            <h5>Customer Services</h5>
+          </div>
+        </div>
+      </div>
+      <div class="about-final">
+        <div class="about-left"></div>
+        <div class="about-right">
+          <h1>About Us_</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+            corporis voluptate esse consectetur neque nulla incidunt iusto
+            adipisci aliquid.
+          </p>
+          <div class="about-content">
+            <div class="about-content">
+              <i class="fa fa-users first-icon about-ic"></i>
+              <div class="about-digit">
+                <h3 class="digit">1234</h3>
+                <p>Customer Services</p>
+              </div>
+            </div>
+            <div class="about-content">
+              <i class="fa fa-check first-icon about-ic"></i>
+              <div class="about-digit">
+                <h3 class="digit">1234</h3>
+                <p>Customer Services</p>
+              </div>
+            </div>
+          </div>
+          <button class="right-btn btn">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="main-container">
+        <div class="tmem-content">
+          <h1>__Services__</h1>
+          <div class="memberss Services">
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-2.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+              </div>
+              <div class="name-designation">
+                <h5>General Carpentry</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="" class="service-link"
+                  >Get A Quote <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-3.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+              </div>
+              <div class="name-designation">
+                <h5>Furniture Manufacturing</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="" class="service-link"
+                  >Get A Quote <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-4.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+              </div>
+              <div class="name-designation">
+                <h5>Furniture Remodeling</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="" class="service-link"
+                  >Get A Quote <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-5.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+              </div>
+              <div class="name-designation">
+                <h5>Wooden Floor</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+                  unde dolor voluptates.
+                </p>
+                <a href="" class="service-link"
+                  >Get A Quote <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-6.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+              </div>
+              <div class="name-designation">
+                <h5>Wooden Furniture</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+                  unde dolor voluptates.
+                </p>
+                <a href="" class="service-link"
+                  >Get A Quote <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-1.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+              </div>
+              <div class="name-designation">
+                <h5>Custom Work</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+                  unde dolor voluptates.
+                </p>
+                <a href="" class="service-link"
+                  >Get A Quote <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- picture left and right -->
+
+      <div class="about-final">
+        <div class="about-right">
+          <h1>Why Choose Us_</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+            corporis voluptate esse consectetur neque nulla incidunt iusto
+            adipisci aliquid.
+          </p>
+          <div class="about-content">
+            <div class="about-content-1">
+              <i class="fa fa-headphones first-icon about-ic"></i>
+
+              <div class="about-digit">
+                <h3 class="digit">1234</h3>
+                <p>Customer Services</p>
+              </div>
+            </div>
+            <div class="about-content-1">
+              <i class="fa fa-drafting-compass first-icon about-ic"></i>
+              <div class="about-digit">
+                <h3 class="digit">1234</h3>
+                <p>Customer Services</p>
+              </div>
+            </div>
+
+            <div class="about-content-1">
+              <i class="fa fa-users first-icon about-ic"></i>
+              <div class="about-digit">
+                <h3 class="digit">1234</h3>
+                <p>Customer Services</p>
+              </div>
+            </div>
+            <div class="about-content-1">
+              <i class="fa fa-check first-icon about-ic"></i>
+              <div class="about-digit">
+                <h3 class="digit">1234</h3>
+                <p>Customer Services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-left services-right"></div>
+      </div>
+    </section>
+
+    <!-- our projects-------- -->
+
+    <section class="services">
+      <div class="main-container">
+        <div class="tmem-content">
+          <h1>__Our Projects__</h1>
+          <div class="memberss Services">
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-1.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+                <div class="icon">
+                    <i class="fas fa-eye arrow hid-1"></i>
+                  <i class="fas fa-link arrow hid-1" ></i>
+                </div>
+              </div>
+              <div class="name-designation">
+                <p>General Carpentry</p>
+                <br />
+                <h4>Wooden Furniture Manufacturing and Remodeling</h4>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-2.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+                <div class="icon">
+                    <i class="fas fa-eye arrow hid-1"></i>
+                  <i class="fas fa-link arrow hid-1" ></i>
+                </div>
+              </div>
+              <div class="name-designation">
+                <p>General Carpentry</p>
+                <br />
+                <h4>Wooden Furniture Manufacturing and Remodeling</h4>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-3.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+                <div class="icon">
+                  
+                    <i class="fas fa-eye arrow hid-1"></i>
+                  <i class="fas fa-link arrow hid-1" ></i>
+                </div>
+              </div>
+              <div class="name-designation">
+                <p>General Carpentry</p>
+                <br />
+                <h4>Wooden Furniture Manufacturing and Remodeling</h4>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-4.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+                <div class="icon">
+                  <i class="fas fa-eye arrow hid-1"></i>
+                  <i class="fas fa-link arrow hid-1" ></i>
+                </div>
+              </div>
+              
+              <div class="name-designation">
+                <p>General Carpentry</p>
+                <br />
+                <h4>Wooden Furniture Manufacturing and Remodeling</h4>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-5.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+                <div class="icon">
+                  <i class="fas fa-eye arrow hid-1"></i>
+                  <i class="fas fa-link arrow hid-1" ></i>
+                </div>
+              </div>
+              <div class="name-designation">
+                <p>General Carpentry</p>
+                <br />
+                <h4>Wooden Furniture Manufacturing and Remodeling</h4>
+              </div>
+            </div>
+            <div class="member Service">
+              <div class="img-box">
+                <img
+                  src="./img/service-6.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+                <div class="icon">
+                  <i class="fas fa-eye arrow hid-1"></i>
+                  <i class="fas fa-link arrow hid-1" ></i>
+                </div>
+              </div>
+              <div class="name-designation">
+                <p>General Carpentry</p>
+                <br />
+                <h4>Wooden Furniture Manufacturing and Remodeling</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- image and left right -->
+      <div class="about-final">
+        <div class="about-left project-left"></div>
+        <div class="about-right project-right">
+          <h1>Free Quote_</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+            corporis voluptate esse consectetur neque nulla incidunt iusto
+            adipisci aliquid.
+          </p>
+          <form action="" class="form">
+            <div class="small-item">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="foot-input form-input"
+              />
+            </div>
+            <div class="small-item">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="foot-input form-input"
+              />
+            </div>
+            <div class="small-item">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="foot-input form-input"
+              />
+            </div>
+
+            <div class="small-item">
+              <select
+                name="services"
+                id="s1"
+                class="foot-input form-input select-fo"
+              >
+                <option value="" selected>Select a service</option>
+                <option value="">Select a service</option>
+                <option value="">Select a service</option>
+                <option value="">Select a service</option>
+                <option value="">Select a service</option>
+              </select>
+            </div>
+
+            <div class="form-input">
+              <textarea
+                name=""
+                class="form-input large-item"
+                id=""
+                cols="36"
+                rows="3"
+                placeholder="Special Note"
+              ></textarea>
+            </div>
+            <div>
+              <button class="btn right-btn from-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!---------Team Members---------->
+
+    <section class="team-members">
+      <div class="main-container">
+        <div class="tmem-content">
+          <h1>__Team Members__</h1>
+          <div class="memberss for-gap">
+            <div class="single-member">
+              <div class="img-box">
+                <img
+                  src="./img/team-1.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                /> 
+                <!-- icons -->
+                <div class="hover-left-icon">
+                  <a class="first-icon " href=""><i class="fab fa-facebook-f hover-icon"></i></a>
+                  <a class="first-icon " href=""><i class="fab fa-twitter hover-icon"></i></a>
+                  <a class="first-icon " href=""><i class="fab fa-instagram hover-icon"></i></a>
+                </div>
+                <!-- !!-------!! -->
+              </div>
+              <div class="name-designation">
+                <h5>Full Name</h5>
+                <p>Designation</p>
+              </div>
+            </div>
+            <div class="single-member">
+              <div class="img-box">
+                <img
+                  src="./img/team-2.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+              <!-- icons -->
+              <div class="hover-left-icon">
+                <a class="first-icon " href=""><i class="fab fa-facebook-f hover-icon"></i></a>
+                <a class="first-icon " href=""><i class="fab fa-twitter hover-icon"></i></a>
+                <a class="first-icon " href=""><i class="fab fa-instagram hover-icon"></i></a>
+              </div>
+              <!-- !!-------!! -->
+              </div>
+              <div class="name-designation">
+                <h5>Full Name</h5>
+                <p>Designation</p>
+              </div>
+            </div>
+            <div class="single-member">
+              <div class="img-box">
+                <img
+                  src="./img/team-3.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+                <!-- icons -->
+                <div class="hover-left-icon">
+                  <a class="first-icon " href=""><i class="fab fa-facebook-f hover-icon"></i></a>
+                  <a class="first-icon " href=""><i class="fab fa-twitter hover-icon"></i></a>
+                  <a class="first-icon " href=""><i class="fab fa-instagram hover-icon"></i></a>
+                </div>
+                <!-- !!-------!! -->
+              </div>
+              <div class="name-designation">
+                <h5>Full Name</h5>
+                <p>Designation</p>
+              </div>
+            </div>
+            <div class="single-member">
+              <div class="img-box">
+                <img
+                  src="./img/team-4.jpg"
+                  alt="curley hair"
+                  class="memb-img"
+                />
+                <!-- icons -->
+                <div class="hover-left-icon">
+                  <a class="first-icon " href=""><i class="fab fa-facebook-f hover-icon"></i></a>
+                  <a class="first-icon " href=""><i class="fab fa-twitter hover-icon"></i></a>
+                  <a class="first-icon " href=""><i class="fab fa-instagram hover-icon"></i></a>
+                </div>
+                <!-- !!-------!! -->
+                </div>
+              <div class="name-designation">
+                <h5>Full Name</h5>
+                <p>Designation</p>
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section class="footer">
+      <div class="main-container">
+        <div class="footer-content">
+          <div class="address">
+            <div class="address-1">
+              <h5>Address</h5>
+            </div>
+            <div class="address-1">
+              <i class="fa fa-map-marker"></i>
+              <span>Multan Road Lahore</span>
+            </div>
+            <div class="address-2">
+              <i class="fa fa-phone-alt"></i>
+              <span>+92305 6761558</span>
+            </div>
+            <div class="address-3">
+              <i class="fa fa-envelope"></i>
+              <span>khan70@gmail.com</span>
+            </div>
+            <div class="address-4 for-icon">
+              <a class="arrow foot-icon" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="arrow foot-icon" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="arrow foot-icon" href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a class="arrow foot-icon" href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="services address">
+            <div class="address-1">
+              <h5>Services</h5>
+            </div>
+            <div class="address-1">
+              <i class="fas fa-angle-right"></i>
+              <span>General Carpentry</span>
+            </div>
+            <div class="address-1">
+              <i class="fas fa-angle-right"></i>
+              <span>Furniture Remodeling</span>
+            </div>
+            <div class="address-2">
+              <i class="fas fa-angle-right"></i>
+              <span>Wooden Furniture</span>
+            </div>
+            <div class="address-3">
+              <i class="fas fa-angle-right"></i>
+              <span>Wooden Furniture</span>
+            </div>
+            <div class="address-4">
+              <i class="fas fa-angle-right"></i>
+              <span>Custom Carpentry</span>
+            </div>
+          </div>
+          <div class="quick-links address">
+            <div class="address-1">
+              <h5>Quick Links</h5>
+            </div>
+            <div class="address-1">
+              <i class="fas fa-angle-right"></i>
+              <span>About Us</span>
+            </div>
+            <div class="address-1">
+              <i class="fas fa-angle-right"></i>
+              <span>Contact Us</span>
+            </div>
+            <div class="address-2">
+              <i class="fas fa-angle-right"></i>
+              <span>Our Services</span>
+            </div>
+            <div class="address-3">
+              <i class="fas fa-angle-right"></i>
+              <span>Terms & Conditions</span>
+            </div>
+            <div class="address-4">
+              <i class="fas fa-angle-right"></i>
+              <span>Support</span>
+            </div>
+          </div>
+          <div class="contacts address">
+            <div class="address-1">
+              <h5>Newsletter</h5>
+            </div>
+            <div class="address-1">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing!</p>
+            </div>
+            <div class="address-2">
+              <input type="text" placeholder="Your email" class="foot-input" />
+            </div>
+            <button class="right-btn foot-btn">SignUp</button>
+          </div>
+        </div>
+        <hr />
+        <div class="last">
+          <p>© <a href=""> Your Site</a>, All Right Reserved.</p>
+          <p>Designed By:<a href="">Khan Groups</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- slider  -->
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        console.log(x.length);
+        console.log(typeof x);
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,155 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+/* header */
+header {
+  background-image: url(./assests/team-meeting.jpg);
+  background-color: rgb(57, 57, 201);
+  background-blend-mode: multiply;
+  color: aliceblue;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+nav img {
+  background-color: antiquewhite;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 2px;
+  gap: 22px;
+  color: aliceblue;
+  text-decoration: none;
+}
+.navlink {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 11%;
+  gap: 10px;
+}
+.header-input {
+  padding: 4px;
+}
+.btn {
+  padding: 4px;
+  background-color: red;
+  color: antiquewhite;
+  border-radius: 6px;
+}
+.header-checkbox {
+  display: flex;
+  margin-bottom: 30%;
+  justify-content: space-between;
+  padding-left: 4px;
+}
+/* Red Row services */
+.red-row {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  color: aliceblue;
+  background-color: red;
+}
+/* Section one */
+.section-1 {
+  display: flex;
+  margin: 60px;
+  align-items: center;
+}
+.section-1 img {
+  width: 60%;
+}
+.left {
+  padding: 50px;
+  width: 94%;
+}
+/* section 2 */
+.section-2 {
+  background-color: rgb(22, 22, 98);
+  color: antiquewhite;
+}
+.section-2 h2 {
+  text-align: center;
+  padding-top: 80px;
+}
+.section-2 > p {
+  padding-left: 111px;
+  padding-top: 50px;
+  font-weight: bold;
+}
+.uper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.uper-a {
+  border: 2px solid white;
+}
+.uper-a img {
+  float: left;
+}
+.btn-clr {
+  background-color: rgb(81, 81, 239);
+  margin: 12px;
+}
+.for-text {
+  padding-top: 20px;
+  width: 90%;
+}
+.float-right {
+  float: right;
+}
+.final-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+/* section  3 */
+.section3 {
+  text-align: center;
+}
+.section3main {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.sec3main-child {
+  text-align: -webkit-center;
+  color: antiquewhite;
+  flex: 0 1 250px;
+}
+.sec3main-child img {
+  width: 100%;
+}
+.sec3main-child p {
+  background-color: rgb(22, 22, 98);
+  /* width: 52%; */
+  /* text-align: -webkit-match-parent; */
+  /* padding: 8px; */
+}
+.first-div {
+  padding: 30px;
+}
+/* foooooter */
+.footer {
+  background-color: rgb(22, 22, 98);
+  color: antiquewhite;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-evenly;
+}
+.equal {
+  flex: 0 0 115px;
+}

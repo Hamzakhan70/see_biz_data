@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    font-size: 48px;
+    margin: 0%;
+    padding: 0%;
+  }
+  .flex-container {
+    display: flex;
+  }
+  
+  .section1 {
+    width: 50%;
+  }
+  .section2 {
+    background-color: #338ebf53;
+    width: 50%;
+    padding-left: 52px;
+    font-size: 98px;
+  }
+  .section2 p {
+    margin: 0%;
+  }
+  .section2 > button {
+    border-radius: 25px;
+    background-color: rgb(112, 133, 241);
+    padding: 19px;
+    font-size: 98px;
+  }
+  .box1 {
+    background-color: beige;
+    margin: 49px;
+    padding: 12px;
+    width: 1100px;
+    height: 322px;
+    text-align:left;
+  }
+  .box1 p:first-child{
+    font-weight: bold;
+  }
+  .input {
+    background-color: beige;
+    width: 50%;
+    height: 322px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 22%;
+  }
+  .input2 {
+    padding: 7%;
+    width: 500px;
+  }
+  .middle-section {
+    background-color: rgb(29, 29, 75);
+    overflow: hidden;
+  }
+  .middle-section h1{
+    text-align: center;
+    color: #efeeee;
+    padding-top: 7%;
+  }
+  .flex-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 112px;
+  }
+  .last-section {
+    background-image: url(advocate.jpg);
+    background-repeat: round;
+    height: 1791px;
+    width: 100%;
+  }
+  .last-section p{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:larger;
+  }
+  .boxlast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box2 {
+    background-color: rgb(237, 237, 10);
+    margin: 99px;
+    padding: 122px;
+    width: 700px;
+    height: 322px;
+    text-align:left
+  }
+  .button {
+    border-radius: 25px;
+    background-color: rgb(21, 145, 227);
+    padding: 15px;
+    font-size: 50px;
+  }
+  .footer {
+    /* overflow: hidden; */
+    background-color: rgb(21, 145, 227);
+    color: #483c3c;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 271px;
+  }
+</style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="section1">
+      <img
+        src="advocate.jpg"
+        style="width: 100%; height: 100%"
+        ="image of the girl"
+      />
+    </div>
+    <div class="section2">
+      <h3>
+        We create the architect <br />
+        that inspire
+      </h3>
+      <p>images from</p>
+      <p><img src="arrow.png" alt="" />london</p>
+      <p><img src="arrow.png" alt="" />Portugese</p>
+      <button>contact us</button>
+    </div>
+  </div>
+<section class="middle-section">
+  <h1>We are good fit if...</h1>
+  <div class="flex-container1">
+    <div class="box1">
+      <img src="arrow.png" alt="icon">
+      <p>hey i am one</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="box1">
+      <img src="pic1.png" alt="icon" height="112" width="112">
+      <p>hey i am two</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="box1">
+      <img src="pic2.png" alt="icon" height="112" width="112">
+      <p>hey i am three</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="box1">
+      <img src="pic1.png" alt="icon" height="112" width="112">
+      <p>hey i am <four></four></p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+  </div>
+</section>
+<section class="last-section">
+  <p style="margin: 0%; padding: 5%; color: #e20c0c; text-align: center">
+    Contact Us
+  </p>
+  <div class="input">
+    <div class="input1"><input class="input2" ="text"  placeholder="Name"/></div>
+    <div class="input1"><input class="input2" ="text" placeholder="Father Name"/></div>
+    <div class="input1"><button class="button">Submit</button></div>
+  </div>
+  <div class="boxlast">
+    <div class="box2">
+      <img src="arrow.png" alt="icon" height="112" width="112">
+      <p>hey i am one</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="box2">
+      <img src="pic1.png" alt="icon" height="112" width="112">
+      <p>hey i am two</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="box2">
+      <img src="pic2.png" alt="icon" height="112" width="112">
+      <p>hey i am three</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+  </div>
+</section>
+<div class="footer">
+  <div>
+    <footer class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, cupiditate vero nesciun?</footer>
+  </div>
+</div>
+
+</body>
+
+</html>

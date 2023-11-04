@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+    <style>
+      /*  descending combinators working {it will work on all the childs and grand child and so on}*/
+      /* .main p {
+        background-color: rgb(193, 249, 137);
+      } */
+      /* **************************** */
+      /* > child combinators working {it will work on all the childs NOT grand child and so on}*/
+      /* .main > p {
+        background-color: rgb(193, 249, 137);
+      } */
+      /* **************************** */
+      /* > + child Siblings combinators working {it will work on first sibling not on all siblings}*/
+      .main + p {
+        background-color: rgb(193, 249, 137);
+      }
+      /* **************************** */
+      /* > ~ General Siblings combinators working {it will work on All sibling having same parent}*/
+      .main ~ p {
+        background-color: rgb(193, 249, 137);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hamza Arif Khan 35</h1>
+    <div class="main">
+      <p>This is first child</p>
+      <p>This is 2nd child</p>
+      <p>This is 3rd child</p>
+      <p>This is 4rth child</p>
+      <p>This child is before Nested Div</p>
+      <div class="child">
+        <p>This is grand child :1</p>
+        <p>This is grand child :2</p>
+        <p>This is grand child :3</p>
+      </div>
+      <p>This child is After Nested Div</p>
+      <p>This is 5th child</p>
+    </div>
+    <p>This is 1st Sibling</p>
+    <p>This is 2nd Sibling</p>
+    <p>This is 3rd Sibling</p>
+    <div class="child-2">
+      <p>This is grand child2 :1</p>
+      <p>This is grand child2 :2</p>
+      <p>This is grand child2 :3</p>
+    </div>
+  </body>
+</html>
